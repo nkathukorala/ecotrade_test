@@ -9,31 +9,31 @@
         <center><h1>Sign Up</h1></center>
         <p><b>Welcome to EcoTrade! Please sign up to continue.</b></p>
         </div>
-        <form action="" method="POST">
+        <form action="<?php echo URLROOT?>/Users/register" method="POST">
             <!-- username -->
             <div class="form-input-title">Username</div>
-            <input type="text" name="username" placeholder="Username" id="username" class="username" >
-            <span class="form-invalid">invalid username</span>
+            <input type="text" name="username" placeholder="Username" id="username" class="username" value="<?php echo $data['username']; ?>">
+            <span class="form-invalid"><?php echo $data['username_err']; ?></span>
 
             <!-- email -->
             <div class="form-input-title">Email</div>
-            <input type="text" name="email" placeholder="Email" id="email" class="email" >
-            <span class="form-invalid"></span>
+            <input type="text" name="email" placeholder="Email" id="email" class="email" value="<?php echo $data['email']; ?>">
+            <span class="form-invalid"><?php echo $data['email_err']; ?></span>
 
             <!-- contact number -->
             <div class="form-input-title">Contact Number</div>
-            <input type="text" name="number" placeholder="Contact Number" id="number" class="number" >
-            <span class="form-invalid"></span>
+            <input type="text" name="number" placeholder="Contact Number" id="number" class="number" value="<?php echo $data['number']; ?>" >
+            <span class="form-invalid"><?php echo $data['number_err']; ?></span>
 
             <!-- password -->
             <div class="form-input-title">Password</div>
-            <input type="password" name="password" placeholder="Password" id="password" class="password" >
-            <span class="form-invalid"></span>
+            <input type="password" name="password" placeholder="Password" id="password" class="password" value="<?php echo $data['password']; ?>" >
+            <span class="form-invalid"><?php echo $data['password_err']; ?></span>
 
             <!-- confirm password -->
             <div class="form-input-title">Confirm Password</div>
-            <input type="password" name="confirm_password" placeholder="Confirm Password" id="confirm_password" class="confirm_password" >
-            <span class="form-invalid"></span>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" id="confirm_password" class="confirm_password" value="<?php echo $data['confirm_password']; ?>" >
+            <span class="form-invalid"><?php echo $data['confirm_password_err']; ?></span>
 
             <!-- submit button -->
             <br><br>

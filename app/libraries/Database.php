@@ -29,7 +29,7 @@
 
         //Prepared statement
         public function query($sql){
-            $this->statement = $this->dbh-prepare($ql);
+            $this->statement = $this->dbh->prepare($sql);
         }
         //Bind the parameters
         public function bind($param, $value, $type = NULL){
@@ -65,7 +65,7 @@
 
         //Get single record as the single result
         public function single(){
-            $this->execute()();
+            $this->execute();
             return $this->statement->fetch(PDO::FETCH_OBJ);
         }
 

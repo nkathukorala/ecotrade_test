@@ -20,11 +20,6 @@
             <input type="text" name="email" placeholder="Email" id="email" class="email" value="<?php echo $data['email']; ?>">
             <span class="form-invalid"><?php echo $data['email_err']; ?></span>
 
-            <!-- contact number -->
-            <div class="form-input-title">Contact Number</div>
-            <input type="text" name="number" placeholder="Contact Number" id="number" class="number" value="<?php echo $data['number']; ?>" >
-            <span class="form-invalid"><?php echo $data['number_err']; ?></span>
-
             <!-- password -->
             <div class="form-input-title">Password</div>
             <input type="password" name="password" placeholder="Password" id="password" class="password" value="<?php echo $data['password']; ?>" >
@@ -35,9 +30,28 @@
             <input type="password" name="confirm_password" placeholder="Confirm Password" id="confirm_password" class="confirm_password" value="<?php echo $data['confirm_password']; ?>" >
             <span class="form-invalid"><?php echo $data['confirm_password_err']; ?></span>
 
+            <div>
+            <!-- term of service agreement -->
+            <br>
+            <label for="agree">
+                <input type="checkbox" name="agree" id="agree" value="yes"/> I agree
+                with the
+                <a href="<?php echo URLROOT; ?>/Users/terms" title="term of services">terms of service</a>
+
+            </label>
+            <!-- Display the agree_err message -->
+            </div>
+            <div>
+            <span class="form-invalid"><?php echo $data['agree_err']; ?></span>
+            </div>
+
             <!-- submit button -->
-            <br><br>
+            
             <input type="submit" value="Sign Up" class="form-btn">
+
+            <footer>Already have an account? <a href="<?php echo URLROOT; ?>/Users/login">Login here</a></footer>
+
+
         </form>
     </div>
 

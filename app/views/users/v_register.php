@@ -20,6 +20,11 @@
             <input type="text" name="email" placeholder="Email" id="email" class="email" value="<?php echo $data['email']; ?>">
             <span class="form-invalid"><?php echo $data['email_err']; ?></span>
 
+            <!-- contact number -->
+            <div class="form-input-title">Contact Number</div>
+            <input type="text" name="number" placeholder="Contact Number" id="number" class="number" value="<?php echo $data['number']; ?>">
+            <span class="form-invalid"><?php echo $data['number_err']; ?></span>
+
             <!-- password -->
             <div class="form-input-title">Password</div>
             <input type="password" name="password" placeholder="Password" id="password" class="password" value="<?php echo $data['password']; ?>" >

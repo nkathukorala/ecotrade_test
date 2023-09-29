@@ -13,14 +13,14 @@
 
             <!-- email -->
             <div class="form-input-title">Email</div>
-            <input type="text" name="email" placeholder="Email" id="email" class="email" >
-            <span class="form-invalid"></span>
+            <input type="text" name="email" placeholder="Email" id="email" class="email" value="<?php echo $data['email'];?>" >
+            <span class="form-invalid"><?php echo $data['email_err'];?></span>
 
 
             <!-- password -->
             <div class="form-input-title">Password</div>
-            <input type="password" name="password" placeholder="Password" id="password" class="password" >
-            <span class="form-invalid"></span>
+            <input type="password" name="password" placeholder="Password" id="password" class="password" value="<?php echo $data['password'];?>">
+            <span class="form-invalid"><?php echo $data['password_err'];?></span>
 
             <!-- submit button -->
             <br><br>
